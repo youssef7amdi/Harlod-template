@@ -1,0 +1,71 @@
+/* General Rules */
+:root {
+  --main-dark-color: #1c2f50;
+  --main-light-color: #2fb4ae;
+  --orange-color: #ff7f51;
+  --blue-color: #2558ab;
+  /* --border-color: #ff1493; */
+  --yellow-color: #ffcd00;
+  --links-color: #49494b;
+  --light-text-color: #959595;
+  --main-bg-color: #f4f6fb;
+  --golden-ratio: 1.61803398875;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+.app > div {
+  width: 100%;
+  /* min-height: 100dvh; */
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* grid system */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}

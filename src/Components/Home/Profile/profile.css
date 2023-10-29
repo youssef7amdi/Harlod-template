@@ -1,0 +1,133 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .profile-container {
+    flex-wrap: wrap;
+  }
+}
+/* profile-info section */
+.profile-info {
+  flex: 1 1 50%;
+}
+.profile-info .hello {
+  color: var(--yellow-color);
+  font-weight: bold;
+}
+.profile-info .name {
+  color: var(--main-dark-color);
+  font-size: 40px;
+  width: fit-content;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.profile-info .name span {
+  width: 3px;
+  height: 30px;
+  margin-left: 2px;
+  background-color: var(--light-text-color);
+  display: inline-block;
+  animation: fading 1.5s ease infinite;
+}
+.profile-info .info {
+  color: var(--light-text-color);
+  line-height: var(--golden-ratio);
+  margin-bottom: 1.5rem;
+}
+.profile-info .social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+.profile-info .see-work {
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+.profile-info .see-work::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--yellow-color);
+  opacity: 0.4;
+  z-index: -1;
+}
+.profile-info .arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.profile-info .arrow span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: var(--light-text-color);
+  background-color: #fff;
+  border: 1px solid var(--light-text-color);
+  cursor: pointer;
+}
+/* profile-img section */
+.profile-img {
+  position: relative;
+  z-index: 0;
+  flex: 1 1 50%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 70px;
+}
+.profile-img .img-bg {
+  position: absolute;
+  z-index: -1;
+  width: 320px;
+  height: 320px;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right,
+    var(--main-light-color),
+    var(--yellow-color)
+  );
+  transform-origin: center center;
+  rotate: 45deg;
+}
+.profile-img img {
+  max-width: 100%;
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .profile-img .img-bg {
+    width: 270px;
+    height: 270px;
+  }
+  .profile-img img {
+    max-width: 100%;
+  }
+}
+/* Animation */
+@keyframes fading {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}

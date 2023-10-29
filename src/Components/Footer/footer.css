@@ -1,0 +1,86 @@
+.footer {
+  background-color: var(--main-dark-color);
+  padding: 20px;
+  padding-top: 60px;
+}
+.footer-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-info {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(178, 178, 178);
+  line-height: var(--golden-ratio);
+  font-size: 14px;
+}
+.footer-info .social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.company-links {
+  flex: 1 1 20%;
+}
+.company-links h4 {
+  color: rgb(238, 238, 238);
+  margin-bottom: 20px;
+}
+.company-links .links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(178, 178, 178);
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+.company-links .links-container a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: translate 0.3s;
+}
+.company-links .links-container a:hover {
+  translate: 10px;
+}
+.sign-up {
+  flex: 1 1 50%;
+}
+.sign-up h4 {
+  color: rgb(238, 238, 238);
+  margin-bottom: 20px;
+}
+.sign-up p {
+  color: rgb(178, 178, 178);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.form-subscribe {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.input-subscribe {
+  border: none;
+  outline: none;
+  padding: 15px;
+  flex: 1 1 90%;
+}
+.btn-subscribe {
+  border: none;
+  outline: none;
+  background-color: var(--main-light-color);
+  color: white;
+  padding: 15px;
+  flex: 1 1 10%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-subscribe:hover {
+  background-color: #289c96;
+}

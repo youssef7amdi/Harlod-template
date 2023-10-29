@@ -1,0 +1,22 @@
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.sm-paragraph {
+  color: var(--light-text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.heading {
+  color: var(--main-dark-color);
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.lg-paragraph {
+  color: var(--light-text-color);
+  line-height: var(--golden-ratio);
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}

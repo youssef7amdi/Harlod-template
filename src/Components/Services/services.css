@@ -1,0 +1,45 @@
+#services {
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  padding-top: 100px;
+}
+.service-container {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.service-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.service-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.service-box .icon {
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.service-box h3 {
+  color: var(--main-dark-color);
+  font-size: 1.15rem;
+}
+.service-box p {
+  line-height: var(--golden-ratio);
+  color: var(--light-text-color);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
