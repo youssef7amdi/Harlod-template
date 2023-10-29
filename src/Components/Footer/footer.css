@@ -35,7 +35,6 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  color: rgb(178, 178, 178);
   font-size: 12px;
   letter-spacing: 0.4px;
 }
@@ -44,6 +43,7 @@
   align-items: center;
   gap: 5px;
   transition: translate 0.3s;
+  color: rgb(178, 178, 178);
 }
 .company-links .links-container a:hover {
   translate: 10px;
