@@ -52,6 +52,13 @@
   position: relative;
   z-index: 1;
   margin-bottom: 2rem;
+  color: var(--main-dark-color);
+}
+.profile-info .see-work:hover {
+  text-decoration: underline;
+}
+.profile-info .see-work:visited {
+  color: var(--main-dark-color);
 }
 .profile-info .see-work::before {
   content: "";

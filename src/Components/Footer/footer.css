@@ -48,6 +48,9 @@
 .company-links .links-container a:hover {
   translate: 10px;
 }
+.company-links .links-container a:visited {
+  color: rgb(178, 178, 178);
+}
 .sign-up {
   flex: 1 1 50%;
 }
